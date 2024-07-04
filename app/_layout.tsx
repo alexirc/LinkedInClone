@@ -13,7 +13,9 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'mon': require('../assets/fonts/Montserrat-Regular.ttf'),
+    'mon-sb': require('../assets/fonts/Montserrat-SemiBold.ttf'),
+    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf')
   });
 
   useEffect(() => {
@@ -30,6 +32,15 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen
+          name='(modals)/postModal'
+          options={{
+            title: 'Post',
+            presentation: 'modal',
+            headerShown: false,
+            contentStyle: {backgroundColor: 'white'}
+          }}
+        />
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>
