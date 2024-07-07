@@ -15,7 +15,14 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     'mon': require('../assets/fonts/Montserrat-Regular.ttf'),
     'mon-sb': require('../assets/fonts/Montserrat-SemiBold.ttf'),
-    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf')
+    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf'),
+    'spaceMono': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'robot-black': require('../assets/fonts/Roboto/Roboto-Black.ttf'),
+    'robot-bold': require('../assets/fonts/Roboto/Roboto-Bold.ttf'),
+    'robot-regular': require('../assets/fonts/Roboto/Roboto-Regular.ttf'),
+    'robot-medium': require('../assets/fonts/Roboto/Roboto-Medium.ttf'),
+    'robot-light': require('../assets/fonts/Roboto/Roboto-Light.ttf'),
+    'robot-thin': require('../assets/fonts/Roboto/Roboto-Thin.ttf'),
   });
 
   useEffect(() => {

@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     chip: {
         backgroundColor: 'white',
         paddingHorizontal: 20,
-        paddingVertical: 10,
+        paddingVertical: 8,
         borderRadius: 50,
         borderWidth: 1,
         borderColor: '#E0E0E0',
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     chipActive: {
         backgroundColor: 'green',
         paddingHorizontal: 20,
-        paddingVertical: 10,
+        paddingVertical: 8,
         borderRadius: 50,
         borderWidth: 1,
         borderColor: '#E0E0E0',
